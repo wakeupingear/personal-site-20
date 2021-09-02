@@ -1,0 +1,168 @@
+{
+    "titleButton":["   Enter\n     The\nKingdom!"],
+    "titleFruit":[
+        "Mango",
+        "Strawberry",
+        "Blueberry",
+        "Banana",
+        "Dragonfruit",
+        "Raspberry",
+        "Apple",
+        "Pineapple",
+        "Moonberry",
+        "Jerry"
+    ],
+
+    "characterCustom":[
+        "Fur     Eyes     Clothing",
+        "All done!",
+        " You don't have\nany Clothing yet!"
+        ],
+
+    "chatTitle":[
+        "Chat",
+        "Enter a message!"
+    ],
+
+    "settingsText":[
+        "Settings",
+        "Volume",
+        "Music",
+        "SFX",
+        "Language",
+        "Controls",
+        "Left",
+        "Right",
+        "Account",
+        "Enter a description of the bug."
+    ],
+
+    "settingsReset":[
+        "question",
+        "Do you want to reset your progress?\nYou'll need to close and reopen the game to play again.",
+        "Nope!","Yep!","-1"
+    ],
+
+    "clothingDesc":[
+        "Face Mask",
+        "Yellow Logo Tee",
+        "Pride Tee",
+        "Top Hat",
+        "Bow Tie",
+        "Choker",
+        "Red-Striped Socks",
+        "Skirt",
+        "Gold Chain",
+        "Tie-Dye Tee",
+        "Rain Boots",
+        "Flowered Tee",
+	    "Towel",
+	    "Sunglasses",
+        "Sports Coat"
+	],
+
+    "itemCollect":[
+        "Got the GEYSER EMOTE! ",
+        "Found a GOLD CHAIN! "
+    ],
+
+    "roomRegion":[
+        "Kingdom Overlook",
+        "Kingdom Town",
+        "Castle",
+        "Mt. Light"
+    ],
+
+    "roomName":[
+        "Gondola Station",
+        "Town Square",
+        "Courtyard",
+        "Caves",
+        "Peak Path"
+    ],
+    
+    "breed":[
+        "Bear",
+        "Panda",
+        "Fox",
+        "Sloth",
+        "Tiger",
+        "Elephant",
+        "Lion",
+        "Unicorn"
+    ],
+
+
+    "geyserSign":["'Ole' Aquarius'!\n\nEruptions every 2 Minutes"],
+    "townNorthSign":["Castle: Up\n\nMt. Light: Left","end"],
+
+
+
+    "pipIntro":["Hi! I'm PIP!\n Nice to meet you!","end"],
+
+    "pipTown1":["Hi there, {name}!","end"],
+    "pipTown2":[1],
+    "pipTown3":[1],
+    "pipTown4":[1],
+    "pipTown5":[1],
+    "pipTown6":[1],
+    "pipTown7":[1],
+    "pipTown8":[1],
+    "pipTown9":[1],
+    "pipTown10":[1],
+    "pipTown11":[1],
+    "pipTown12":[1],
+    "pipTown13":[1],
+    "pipTown14":[1],
+    "pipTown15":[1],
+    "pipTown16":[1],
+    "pipTown17":[1],
+    "pipTown18":[1],
+    "pipTown19":[1],
+    "pipTown20":[1],
+    "pipTown21":[1],
+    "pipTown22":[1],
+    "pipTown23":[1],
+    "pipTown24":[1],
+    "pipTown25":[1],
+    "pipTown26":[1],
+    "pipTown27":[1],
+    "pipTown28":[1],
+    "pipTown29":[1],
+    "pipTown30":[1],
+
+    
+
+    "honeythunderIntro":["Hey! I'm HONEYTHUNDER!","end"],
+
+    "honeythunderCastle1":["Hi there, {name}!","end"],
+    "honeythunderCastle2":[1],
+    "honeythunderCastle3":[1],
+    "honeythunderCastle4":[1],
+    "honeythunderCastle5":[1],
+    "honeythunderCastle6":[1],
+    "honeythunderCastle7":[1],
+    "honeythunderCastle8":[1],
+    "honeythunderCastle9":[1],
+    "honeythunderCastle10":[1],
+    "honeythunderCastle11":[1],
+    "honeythunderCastle12":[1],
+    "honeythunderCastle13":[1],
+    "honeythunderCastle14":[1],
+    "honeythunderCastle15":[1],
+    "honeythunderCastle16":[1],
+    "honeythunderCastle17":[1],
+    "honeythunderCastle18":[1],
+    "honeythunderCastle19":[1],
+    "honeythunderCastle20":[1],
+    "honeythunderCastle21":[1],
+    "honeythunderCastle22":[1],
+    "honeythunderCastle23":[1],
+    "honeythunderCastle24":[1],
+    "honeythunderCastle25":[1],
+    "honeythunderCastle26":[1],
+    "honeythunderCastle27":[1],
+    "honeythunderCastle28":[1],
+    "honeythunderCastle29":[1],
+    "honeythunderCastle30":[1]
+}

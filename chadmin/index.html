@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<title>WF - Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/styles.css" />
+<style>
+	#container {
+		position: absolute;
+		left: 5vw;
+		top: 9vw;
+		display: flex;
+		width: 80vw;
+	}
+
+	.location {
+		font-size: 3vw;
+		padding: 2vw;
+		margin: 3vw;
+		text-decoration: none;
+		color: white;
+	}
+</style>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<body>
+
+	<div class="topBar">
+		<div class="barLeft"><a id="backArrow" class="back" href="../index.html" style="left:2vw;top:0.5vw;"><img
+					src="/right-arrow.svg" alt="Home" /></a></div>
+		<div class="barCenter"><a id="centerText" class="barBlock" target="_blank"
+				href="https://www.youtube.com/watch?v=asjQNZn7vng"
+				style="background:Tomato;width:25vw;height:100%;">Admin</a></div>
+	</div>
+
+	<div style="display:block;width:100vw;">
+		<div id="container"></div>
+	</div>
+
+	<script>
+		var loc = window.location.pathname;
+		var sub = loc.substring(0, loc.lastIndexOf('/'));
+		var currentDir = "/var/www/html" + sub;
+		getCorrectDir();
+
+		$(document).ready(function () {
+			if (currentDir == "/var/www/html/chadmin") document.getElementById("backArrow").href = "http://www.willfarhat.com";
+			document.getElementById("centerText").innerHTML = sub[0].toUpperCase() + sub.slice(1);
+			$.ajax(
+				{
+					url: 'contents.php?dir=' + currentDir,
+					type: 'GET',
+					dataType: 'text',
+					success: function (data) {
+						var files = [];
+						for (var i = 3; i < data.length; i++) {
+							if (data.substring(i, i + 1) == "#") {
+								var end = i + 1;
+								while (end < data.length && data.substring(end, end + 1) != "#") end++;
+								files.push(data.substring(i, end));
+							}
+						}
+						var c = document.getElementById('container');
+						for (var j = 0; j < files.length; j++) {
+							var f = files[j].substring(1);
+							if (f == "contents.php" || f == "index.html") continue;
+							str = ""
+							str += '<a class="location" style="background-color:';
+							if (f.indexOf(".") == -1) {
+								str += 'Gray'
+							}
+							else {
+								str += 'MediumSeaGreen'
+							}
+							str += ';" href="' + f + '">' + f[0].toUpperCase() + f.slice(1) + '</a>';
+
+							console.log(str);
+							c.innerHTML += str;
+						}
+					}
+				});
+		});
+
+		function getCorrectDir() {
+			var end = sub.length - 1
+			while (sub[end] != "/") end--;
+			sub = sub.slice(end + 1);
+		}
+	</script>
+</body>
+
+</html>

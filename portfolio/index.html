@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+    <title>Will Farhat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="/favicon.ico">
+	<style>
+	html {
+		padding:0;
+		margin:0;
+	}
+	body{
+	  padding-top: 8vw;
+	}
+	header {
+	  position: fixed;
+	  top: 7vw;
+	}
+	#allP {display:inline-block;}
+
+	#myImg {
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: 0.3s;
+	}
+
+	#myImg:hover {opacity: 0.7;}
+
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+
+	.modal-content {
+	  margin: 3vh;
+	  max-height: 80vh;
+	  display: block;
+	  margin-left: auto;
+	  margin-right:auto; 
+	}
+
+	/* Caption of Modal Image */
+	#caption {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	  text-align: center;
+	  color: #ccc;
+	  padding: 10px 0;
+	  height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content, #caption {  
+	  -webkit-animation-name: zoom;
+	  -webkit-animation-duration: 0.3s;
+	  animation-name: zoom;
+	  animation-duration: 0.3s;
+	}
+
+	@-webkit-keyframes zoom {
+	  from {-webkit-transform:scale(0)} 
+	  to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+	  from {transform:scale(0)} 
+	  to {transform:scale(1)}
+	}
+
+	/* The Close Button */
+	.close {
+	  position: absolute;
+	  top: 3vw;
+	  right: 3vw;
+	  color: #f1f1f1;
+	  font-size: 6vw;
+	  font-weight: bold;
+	  transition: 0.1s;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: #bbb;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+	  .modal-content {
+	  }
+	}
+	</style>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body style="margin:0;border:none;">
+
+<div class="topBar">
+	<div class="barLeft"><a class="back" href="http://www.willfarhat.com/" style="left:2vw;top:0.5vw;"><img src="../right-arrow.svg" alt="Home" /></a></div>
+	<div class="barCenter">
+		<a id="all" class="barBlock" href="#" style="background:Violet;width:15vw;">All Art</a>
+		<a id="digital" class="barBlock" href="#" style="background:Tomato;width:15vw;">Digital</a>
+		<a id="physical" class="barBlock" href="#" style="background:Tomato;width:18vw;">Physical</a>
+	</div>
+</div>
+
+<div id="allP" class="project">
+	<a class="photo"><img src="temple.jpg" style="width:50vw;height:53.2vw;"/></a>
+	<a class="photo"><img src="finalsunpixelart.PNG" style="width:50vw;"/></a>
+	<a class="photo" style="float:right;" data-date="2018"><img src="final.PNG" style="width:22.45vw;"/></a>
+	<a class="photo" style="float:right;"><img src="PERSONA.jpg" style="width:27.55vw;"/></a>
+	<a class="photo" style="float:left;"><img src="FS_4.png" style="width:50vw;height:29.2vw;"/></a>
+	<a class="photo" style="float:right;"><img src="sunset7colors.PNG" style="width:50vw;height:20vw;"/></a>
+	<a class="photo" style="float:left;"><img src="skullKid.jpg" style="width:25vw;height:42.13vw;"/></a>
+	<a class="photo" style="float:left;"><img src="breadnought.PNG" style="width:75vw;"/></a>
+	<a class="photo" style="float:left;"><img src="mykocityhappy.PNG" style="width:40vw;"/></a>
+	<a class="photo" style="float:right;"><img src="riddles.jpg" style="width:60vw;height:50.8vw;"/></a>
+	<a class="photo" style="float:left;"><img src="tongue.jpg" style="width:40vw;"/></a>
+</div>
+
+<div id="digitalP" class="project">
+	<a class="photo"><img src="finalsunpixelart.PNG" style="width:100vw;"/></a>
+	<a class="photo" style="float:left;"><img src="breadnought.PNG" style="width:72vw;"/></a>
+	<a class="photo" style="float:right;" data-date="2018"><img src="final.PNG" style="width:28vw;height:40.4vw;"/></a>
+	<a class="photo" style="float:right;"><img src="sunset7colors.PNG" style="width:56vw;height:24.7vw;"/></a>
+	<a class="photo" style="float:left;"><img src="mykocityhappy.PNG" style="width:44vw;"/></a>
+	<a class="photo" style="float:left;"><img src="FS_4.png" style="width:100vw;"/></a>
+	
+</div>
+
+<div id="physicalP" class="project">
+	<a class="photo" style="float:left;"><img src="skullKid.jpg" style="width:37vw;"/></a>
+	<a class="photo"><img src="temple.jpg" style="width:63vw;height:65.8vw;"/></a>
+	<a class="photo" style="float:right;"><img src="PERSONA.jpg" style="width:40vw;"/></a>
+	<a class="photo" style="float:right;"><img src="riddles.jpg" style="width:60vw;height:50vw;"/></a>
+	<a class="photo" style="float:left;"><img src="tongue.jpg" style="width:100vw;"/></a>
+	
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content">
+  <div id="caption"></div>
+</div>
+
+<script>
+for (var i=0;i<3;i++) document.getElementsByClassName("project")[i].style.display="none"
+document.getElementsByClassName("project")[0].style.display="block";
+</script>
+
+<div style="text-align:center;font-size:2vw;padding:1.5vw;display: flex;justify-content: center;align-items: center;">
+	<p1 id="date" style="padding:2vw;">More art on <a style="color:white;" href="https://www.instagram.com/will_farhat/" target="_blank">Instagram</a></p1>
+</div>
+
+<script>
+	$('#all').click(function(){ changePage("all"); return false; });
+	$('#digital').click(function(){ changePage("digital"); return false; });
+	$('#physical').click(function(){ changePage("physical"); return false; });
+	$('.photo').click(function(){ openModal($( this ).children()[0].src); return false; });
+
+	function changePage(thisId) {
+		for (var i=0;i<3;i++) document.getElementsByClassName("barBlock")[i].style.background="Tomato";
+		document.getElementById(thisId).style.background="Violet";
+		for (var i=0;i<3;i++) document.getElementsByClassName("project")[i].style.display="none";
+		document.getElementById(thisId+"P").style.display="inline-block";
+	}
+
+	var modal = document.getElementById("myModal");
+	var modalImg = document.getElementsByClassName("modal-content")[0];
+	var titles=["breadnought.PNG","Airship, 2019","finalsunpixelart.PNG","Sunburst, 2020","final.PNG","Even Stranger Things, 2019","FS_4.png","The Outset Vanguard, 2020","good drawing.jpg","Robot, 2006","mykocityhappy.PNG","Past Observatory, 2019","PERSONA.jpg","Persona 5 Study, 2019","riddles.jpg","Ridley Hits the Big Time, 2018","skullKid.jpg","Skull Kid, 2017","sunset7colors.PNG","7-Tone Sunset, 2019","temple.jpg","Lego Temple of Time, 2017","tongue.jpg","Venomous, 2018"]
+	function openModal(source){
+	  modal.style.display = "block";
+	  modalImg.src = source;
+	  document.getElementById("caption").innerHTML=titles[titles.indexOf(source.substring(36))+1];
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+</script>
+
+</body>
+</html>

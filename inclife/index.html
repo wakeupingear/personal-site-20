@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+    <title>Will Farhat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="/favicon.ico">
+	<style>
+	html {
+		padding:0;
+		margin:0;
+	}
+	body{
+	  padding-top: 7vw;
+	}
+	header {
+	  position: fixed;
+	  top: 7vw;
+	}
+	</style>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body style="margin:0;border:none;">
+
+<div class="topBar">
+	<div class="barLeft"><a class="back" href="http://www.willfarhat.com/" style="left:2vw;top:0.5vw;"><img src="../right-arrow.svg" alt="Home" /></a></div>
+	<div class="barCenter"><a class="barBlock" target="_blank" href="https://gamejolt.com/games/inclife/501764" style="background:Tomato;width:25vw;height:100%;">Play on GameJolt.com</a></div>
+</div>
+
+<div style="display:inline-block;border:none;margin:0;padding:0;"><img src="incLifeTitle.PNG" style="width:100vw;margin:0;border:none;padding:0;"></img></div>
+
+<div class="paragraph">
+	<div class="subParagraph">
+		<p>Online Platform for <a href="https://inc.hw.com"target="_blank" style="color:white;">HW Inc</a></p>
+		<p style="font-size:1.5vw;color:white;"><br>After Harvard-Westlake High School's entrepreneurship program HW Inc was forced online due to the Covid-19 Pandemic, I designed
+		Inc Life, an online multiplayer video game played in your browser that acted as a central hub for sending Zoom Links and other resources to participants and Coaches. Participants could communicate
+		and break off into individual team Zoom rooms through physical portals throughout the game world, which was modelled in 2D after Harvard-Westlake's Mudd Library. The game
+		also had a puzzle based adventure that played out throughout the 6-day program.
+		</p>
+	</div>
+	<br>
+	<div class="subParagraph">
+		<p>Features</p>
+		<p style="font-size:1.5vw;color:white;"><br>
+		   .  48 unique rooms<br>
+		   .  Runs in most major web browsers with no download<br>
+		   .  Built-in text chat for participants<br>
+		   .  Varied customization with emotes, hair, and outfits, along with color mixing for eyes and skin<br>
+		   .  Personalized Zoom rooms for the 10 teams<br>
+		   .  Interactive Terminals for lectures, articles, and teambuilding games<br>
+		   .  An automated email system that allowed students to request Coach help<br>
+		</p>
+	</div>
+	<br>
+	<div class="subParagraph">
+		<p>Tech Stuff</p>
+		<p style="font-size:1.5vw;color:white;"><br>
+		   .  Programmed in GameMaker Studio 2 and PHP<br>
+		   .  Hit a peak simultaneous player count of 58, with a theoretical max of 75<br>
+		   .  Managed by a graphical backend application for checking on players, changing Terminal data, and moderating messages<br>
+		   .  Originally ran on an AWS Virtual Machine<br>
+		   .  Currently hosted in an offline form on GameJolt.com<br>
+		</p>
+	</div>
+</div>
+
+<div class="slideshowButton">
+	<div class="container">
+	  <div class="mySlides">
+		<img src="incScreenshot/many folks.PNG" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<img src="incScreenshot/inc life l2.PNG" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<img src="incScreenshot/inc life character customization.PNG" style="width:100%">
+	  </div>
+    
+	  <div class="mySlides">
+		<img src="incScreenshot/ouside inc life.PNG" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<img src="incScreenshot/inc life chat.PNG" style="width:100%">
+	  </div>
+    
+	  <div class="mySlides">
+		<img src="incScreenshot/many inc ppl.PNG" style="width:100%">
+	  </div>
+    
+	  <a class="prev" onclick="plusSlides(-1)">❮</a>
+	  <a class="next" onclick="plusSlides(1)">❯</a>
+
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+
+	  <div class="row">
+		<div class="column">
+		  <img class="demo cursor" src="incScreenshot/many folks.PNG" style="width:100%" onclick="currentSlide(1)" alt="The Lobby">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="incScreenshot/inc life l2.PNG" style="width:100%" onclick="currentSlide(2)" alt="A Zoom Room Portal">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="incScreenshot/inc life character customization.PNG" style="width:100%" onclick="currentSlide(3)" alt="Avatar Customization">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="incScreenshot/ouside inc life.PNG" style="width:100%" onclick="currentSlide(4)" alt="Outside Mudd Library">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="incScreenshot/inc life chat.PNG" style="width:100%" onclick="currentSlide(5)" alt="Wholesome Text Chat">
+		</div>    
+		<div class="column">
+		  <img class="demo cursor" src="incScreenshot/many inc ppl.PNG" style="width:100%" onclick="currentSlide(6)" alt="Server-side Visualization of 40 Players">
+		</div>
+	  </div>
+	</div>
+
+<div></div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
